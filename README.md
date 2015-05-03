@@ -9,7 +9,19 @@ In addition to benchmark itself, we also provide access to set of benchmark resu
 
 For more complete description, checkout out project [Wiki](../../wiki)
 
+# Run test
+
+```shell
+# Compile source code with ant
+ant compile
+
+# Run Calgary compress test
+./run-calgary-compress.sh
+```
+
 # Results
+
+Reports can be found `./reports`.
 
 Are available on project [Wiki](../../wiki).
 
