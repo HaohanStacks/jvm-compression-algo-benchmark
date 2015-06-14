@@ -9,11 +9,11 @@ java -server -cp lib/japex/\* \
  -Djapex.warmupTime=5 \
  -Djapex.runTime=20 \
  -Djapex.numberOfThreads=1 \
- -Djapex.reportsDirectory=reports/calgary-roundtrip \
+ -Djapex.reportsDirectory=reports/calgary-uncompress \
  -Djapex.plotGroupSize=6 \
  -Djapex.inputDir="testdata/calgary" \
  com.sun.japex.Japex \
- cfg/tests-snappy-lzf-lz4-calgary-roundtrip.xml
+ cfg/tests-snappy-lzf-lz4-calgary-uncompress.xml
 
 echo "Done!";
 
