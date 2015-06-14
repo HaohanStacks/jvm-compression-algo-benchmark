@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<testSuite name="Compression test using Calgary corpus data set"
+  xmlns="http://www.sun.com/japex/testSuite"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+>
+    <description><div xmlns=""><p>
+Compression test using Calgary corpus data set
+</p></div></description>
+
+    <!-- Drivers -->
+    <xi:include href="drivers-snappy-lzf-lz4.xml" />
+
+    <!-- Test cases: name has to match with filename -->
+
+<testCase name='R:bib' />
+<testCase name='R:book1' />
+<testCase name='R:book2' />
+<testCase name='R:geo' />
+<testCase name='R:news' />
+<testCase name='R:obj1' />
+<testCase name='R:obj2' />
+<testCase name='R:paper1' />
+<testCase name='R:paper2' />
+<testCase name='R:paper3' />
+<testCase name='R:paper4' />
+<testCase name='R:paper5' />
+<testCase name='R:paper6' />
+<testCase name='R:pic' />
+<testCase name='R:progc' />
+<testCase name='R:progl' />
+<testCase name='R:progp' />
+<testCase name='R:trans' />
+
+</testSuite>

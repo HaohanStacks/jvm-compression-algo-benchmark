@@ -13,7 +13,7 @@ java -server -cp lib/japex/\* \
  -Djapex.plotGroupSize=6 \
  -Djapex.inputDir="testdata/calgary" \
  com.sun.japex.Japex \
- cfg/tests-snappy-lzf-lz4-calgary-compress.xml
+ cfg/tests-snappy-lzf-lz4-calgary-roundtrip.xml
 
 echo "Done!";
 

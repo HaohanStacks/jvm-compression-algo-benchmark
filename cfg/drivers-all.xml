@@ -10,13 +10,13 @@
   xmlns="http://www.sun.com/japex/testSuite"
   xmlns:xi="http://www.w3.org/2001/XInclude"
 >
-  <driver name="LZ4 (JNI)/block" normal="false">
+  <!-- <driver name="LZ4 (JNI)/block" normal="false">
         <description><div xmlns=""><p>LZ4 (JNI), block mode</p></div>
         </description>
         <param name="japex.classPath" value="build/classes"/>
         <param name="japex.classPath" value="lib/lz4/*.jar"/>
         <param name="japex.driverClass" value="com.ning.jcbm.lz4.Lz4JNIDriver"/>
-  </driver>
+  </driver> -->
 
   <driver name="LZ4 (Java+Unsafe)/block" normal="false">
         <description><div xmlns=""><p>LZ4 (Java+Unsafe), block mode</p></div>
@@ -59,13 +59,13 @@
   <!-- 28-Jul-2011, tatu: JNI loading was supposed to work with 1.0.3, but still having
           issues here, so need to keep commented out
     -->
-  <driver name="Snappy(JNI)/block" normal="false">
+  <!-- <driver name="Snappy(JNI)/block" normal="false">
         <description><div xmlns=""><p>Snappy-JNI, block mode</p></div></description>
         <param name="japex.classPath" value="build/classes"/>
         <param name="japex.classPath" value="lib/snappy/*.jar"/>
         <param name="japex.driverClass" value="com.ning.jcbm.snappy.SnappyDriver" />
         <param name="japex.singleClassLoader" value="true"/>
-  </driver>
+  </driver> -->
   <!--
   -->
   <!--
@@ -96,13 +96,13 @@
         <param name="japex.classPath" value="lib/lzf/*.jar"/>
         <param name="japex.driverClass" value="com.ning.jcbm.lzf.LzfDriver" />
   </driver>
-  <driver name="LZF/stream">
+  <!-- <driver name="LZF/stream">
         <description><div xmlns=""><p>LZF, streaming</p></div></description>
         <param name="streaming" value="true" />
         <param name="japex.classPath" value="build/classes"/>
         <param name="japex.classPath" value="lib/lzf/*.jar"/>
         <param name="japex.driverClass" value="com.ning.jcbm.lzf.LzfDriver" />
-  </driver>
+  </driver> -->
 
   <!-- 05-Mar-2013, tatu: Now there are separate "safe" versions that do not
       use 'sun.misc.Unsafe' (similar to LZ4 above)
@@ -140,13 +140,13 @@
 -->
 
   <!-- High-Compression variant of LZ4 belongs here, due to lower speed -->
-  <driver name="LZ4 HC (JNI)/block" normal="false">
+  <!-- <driver name="LZ4 HC (JNI)/block" normal="false">
         <description><div xmlns=""><p>LZ4 HC (JNI), block mode</p></div>
         </description>
         <param name="japex.classPath" value="build/classes"/>
         <param name="japex.classPath" value="lib/lz4/*.jar"/>
         <param name="japex.driverClass" value="com.ning.jcbm.lz4.Lz4HcJNIDriver"/>
-  </driver>
+  </driver> -->
 
 <!--
   <driver name="QuickLZ/L1/block">
@@ -164,22 +164,22 @@
         <param name="japex.driverClass" value="com.ning.jcbm.quicklz.QuickLZDriver3" />
   </driver>
 
-  <driver name="Gzip/JDK/stream">
+  <!-- <driver name="Gzip/JDK/stream">
         <description><div xmlns=""><p>JDK Gzip/Deflate, streaming
 </p></div></description>
         <param name="streaming" value="true" />
         <param name="japex.classPath" value="build/classes"/>
         <param name="japex.driverClass" value="com.ning.jcbm.gzip.JDKGzipDriver" />
-  </driver>
+  </driver> -->
 
   <!-- there's this version that helps with smaller content -->
-  <driver name="Gzip/Ning/stream">
+  <!-- <driver name="Gzip/Ning/stream">
         <description><div xmlns=""><p>JDK Gzip-via-Ning, streaming
 </p></div></description>
         <param name="streaming" value="true" />
         <param name="japex.classPath" value="build/classes"/>
         <param name="japex.driverClass" value="com.ning.jcbm.gzip.NingGzipDriver" />
-  </driver>
+  </driver> -->
 
 <!-- Should we include slower gzip or not?
   <driver name="Gzip/jzlib/stream">
@@ -190,13 +190,13 @@
         <param name="japex.driverClass" value="com.ning.jcbm.gzip.JCraftGzipDriver" />
   </driver>
 -->
-  <driver name="BZip2/stream">
+  <!-- <driver name="BZip2/stream">
         <description><div xmlns=""><p>Commons-compress BZip2 implementation</p></div></description>
         <param name="streaming" value="true" />
         <param name="japex.classPath" value="build/classes"/>
         <param name="japex.classPath" value="lib/jakarta/*.jar"/>
         <param name="japex.driverClass" value="com.ning.jcbm.bzip2.BZip2Driver" />
-  </driver>
+  </driver> -->
 
 <!-- Include fastest LZMA version in official results; no point for slower one
 -->
